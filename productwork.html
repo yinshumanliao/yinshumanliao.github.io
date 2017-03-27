@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    	.artical p {
+    		font-size: 25px;
+    		font-weight: 800;
+    	}
+    	.artical a {
+    		/*color: black;*/
+    		line-height: 30px;
+    		display: block;
+    		/*text-decoration: none;*/
+    	}
+    	.project {
+    		padding-top: 20px;
+    		font-size: 25px;
+    	}
+		#pro1, #pro2 {
+			display: none;
+		}
+		a {
+			color: #9d9d9d;
+		}
+		a:hover {
+			color: #000;
+		}
+    </style>
+</head>
+<body>
+	<div class="artical">
+		<p>微信公众号文章</p>
+		<a href="http://mp.weixin.qq.com/s?__biz=MzIzMTA2NDA0NQ==&mid=401767890&idx=1&sn=11a93cecf5b60b5eabeac28f35648f1a&mpshare=1&scene=1&srcid=0327FqQi5no1D8PJZPJ7xrGH#rd">
+			不为人知的酒仓-年会篇</a>
+		<a href="http://mp.weixin.qq.com/s?__biz=MzIzMTA2NDA0NQ==&mid=401922236&idx=1&sn=cba31c6953a3f1a40e5bfbfc2fa6e5c9&mpshare=1&scene=1&srcid=0327G9Izi5qr77jdY672RkBM#rd">
+			麦芽看年会</a>
+		<a href="http://mp.weixin.qq.com/s?__biz=MzIzMTA2NDA0NQ==&mid=402041010&idx=1&sn=2047019fab79ae957289ff3ac21844b8&mpshare=1&scene=1&srcid=0327bhrpi8YB3XFcc2hkG4Td#rd">
+		抢货啦</a>
+		<a href="http://mp.weixin.qq.com/s?__biz=MzIzMTA2NDA0NQ==&mid=402815757&idx=1&sn=c43466ef0266a9b49a2f9a4a610fb011&mpshare=1&scene=1&srcid=0327yFTIGxyycUu6YGXiHxI3#rd">
+		流动的黄金-贵腐酒</a>
+		<a href="http://mp.weixin.qq.com/s?__biz=MzIzMTA2NDA0NQ==&mid=402842893&idx=1&sn=a5edf5af1436b58b4c2ca633154d446e&mpshare=1&scene=1&srcid=0327cUouRXZ3iestP1hoVcqY#rd">
+		终于等到你</a>
+		<a href="http://mp.weixin.qq.com/s?__biz=MzIzMTA2NDA0NQ==&mid=403198327&idx=1&sn=66eac7d1796beb7f7a86c67582b8480c&mpshare=1&scene=1&srcid=0327bsJZC7YBblFsSECAgv8n#rd">
+		4.9峰会重大内幕消息透露</a>
+		<a href="http://mp.weixin.qq.com/s?__biz=MzIzMTA2NDA0NQ==&mid=403177473&idx=1&sn=90f97a19e50ad0c49cd511c2624a100c&mpshare=1&scene=1&srcid=0327dnnW2V4sikHFAZGUguoC#rd">
+		4.9峰会——美食篇</a>
+		<a href="http://mp.weixin.qq.com/s?__biz=MzIzMTA2NDA0NQ==&mid=2650908335&idx=1&sn=a19e6600907c8cbee9f6a542b01c779c&mpshare=1&scene=1&srcid=0327Dwpr3vF3hGYwaxuPQUeO#rd">
+		【气泡欧洲杯】东道主法国迎来开门红</a>
+		<a href="http://mp.weixin.qq.com/s?__biz=MzIzMTA2NDA0NQ==&mid=2650908331&idx=1&sn=ba4e9227c0df7e647d7d3fd8f09de8ec&mpshare=1&scene=1&srcid=0327Joe7Wqhw0NYVUjPdSsm6#rd">
+		【气泡欧洲杯】欧洲杯观赛指南</a>
+		<a href="http://mp.weixin.qq.com/s?__biz=MzIzMTA2NDA0NQ==&mid=2650908328&idx=1&sn=5b8e835e306559a7acfc5c2586f88d72&mpshare=1&scene=1&srcid=0327cBa6wJVkhFiHXAlVtB3O#rd">
+		畅爽一夏，起泡欧洲杯</a>
+	</div>
+	<div class="project">
+    	<a href="#" id="a1">活动宣传海报：</a><br>
+    	<div id="pro1"><img src="img/f.jpg" class="img1"><img src="img/b.jpg" class="img1"><br></div>
+    	<a href="#" id="a2">产品宣传海报：</a><br>
+    	<div id="pro2"><img src="img/g.jpg"><img src="img/h.jpg"><img src="img/i.jpg">
+    <img src="img/j.jpg"><img src="img/a.jpg"></div>
+    </div>
+    <script>
+    	//var project = document.getElementsByClassName('project');
+    	//var images = project.Image;
+    	//images.style.display = hidden;
+    	var a1 = document.getElementById('a1');
+    	var pro1 = document.getElementById('pro1');
+    	var a2 = document.getElementById('a2');
+    	var pro2 = document.getElementById('pro2');
+//  	var img1 = document.getElementsByClassName('img1');
+//  	var off = true;
+//  	a1.onclick = function(){
+//  		if(off == false){
+//  			console.log('1');
+//  			for(var i = 0;i<2;i++){
+//  				img1.style.display = 'block';
+//  			}
+//  		}
+//  		off = true;
+//  	}
+		var off = true;
+		a1.onclick = function(){
+			if(off == true){
+				pro1.style.display = 'block';
+				off = false;
+			}else {
+				pro1.style.display = 'none';
+				off = true;
+			}
+			pro2.style.display = 'none';
+
+		}
+		a2.onclick = function(){
+			if(off == true){
+				pro2.style.display = 'block';
+				off = false;
+			}else {
+				pro2.style.display = 'none';
+				off = true;
+			}
+			pro1.style.display = 'none';
+
+		}
+    </script>
+</body>
+</html>
